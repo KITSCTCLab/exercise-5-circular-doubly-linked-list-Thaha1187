@@ -2,7 +2,7 @@ class Node:
     def __init__(self, data=None):
         self.data = data
         self.previous = self
-        self.next = self
+        self.next = sel
 
 
 class DoublyCircularLinkedList:
@@ -73,7 +73,7 @@ class DoublyCircularLinkedList:
             self.end.next = temp.next
             self.head = temp.next
             self.count -= 1
-            eturn True
+            return True
         if index == self.count - 1:
             temp = self.end
             self.head.previous = temp.previous
